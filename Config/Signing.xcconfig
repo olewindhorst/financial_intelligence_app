@@ -1,0 +1,5 @@
+// Defaults for GitHub. Put your own values into Local.xcconfig (not committed).
+PRODUCT_BUNDLE_IDENTIFIER = com.example.accounting
+DEVELOPMENT_TEAM =
+
+#include? "Local.xcconfig"

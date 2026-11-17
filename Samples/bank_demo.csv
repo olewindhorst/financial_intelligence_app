@@ -1,0 +1,5 @@
+Buchungstag;Valutadatum;Beguenstigter/Zahlungspflichtiger;Verwendungszweck;Betrag;Waehrung
+03.11.2026;03.11.2026;DEMO Employer;Salary November;3.250,00;EUR
+06.11.2026;06.11.2026;DEMO Supermarket;Card payment;-45,81;EUR
+08.11.2026;08.11.2026;DEMO Landlord;Rent;-730,00;EUR
+10.11.2026;10.11.2026;DEMO Own transfer;Transfer to portfolio;-100,00;EUR

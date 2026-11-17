@@ -1,0 +1,5 @@
+date,transaction_id,type,amount,currency,name,description
+2026-11-04,demo-001,BUY,-200.000000,EUR,DEMO World ETF,ETF savings plan
+2026-11-10,demo-002,TRANSFER,100.000000,EUR,DEMO Deposit,Transfer from checking
+2026-11-12,demo-003,DIVIDEND,4.250000,EUR,DEMO World ETF,Dividend
+2026-11-13,demo-004,CARD_TRANSACTION,-15.990000,EUR,DEMO Cafe,Card payment

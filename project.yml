@@ -1,0 +1,41 @@
+name: Accounting
+
+options:
+  deploymentTarget:
+    iOS: "17.0"
+  createIntermediateGroups: true
+
+packages:
+  AccountingCore:
+    path: Core
+
+settings:
+  base:
+    SWIFT_VERSION: "5.0"
+    TARGETED_DEVICE_FAMILY: "1"
+    IPHONEOS_DEPLOYMENT_TARGET: "17.0"
+    CODE_SIGN_STYLE: Automatic
+
+targets:
+  Accounting:
+    type: application
+    platform: iOS
+    sources:
+      - path: iOS
+    dependencies:
+      - package: AccountingCore
+        product: AccountingCore
+    # bundle id and team come from Config/Signing.xcconfig (+ your own Local.xcconfig)
+    configFiles:
+      Debug: Config/Signing.xcconfig
+      Release: Config/Signing.xcconfig
+    settings:
+      base:
+        MARKETING_VERSION: "0.1.0"
+        CURRENT_PROJECT_VERSION: "1"
+        GENERATE_INFOPLIST_FILE: YES
+        INFOPLIST_KEY_CFBundleDisplayName: Accounting
+        INFOPLIST_KEY_NSFaceIDUsageDescription: "Protects your local financial data."
+        INFOPLIST_KEY_UIApplicationSceneManifest_Generation: YES
+        INFOPLIST_KEY_UILaunchScreen_Generation: YES
+        INFOPLIST_KEY_UISupportedInterfaceOrientations_iPhone: UIInterfaceOrientationPortrait
